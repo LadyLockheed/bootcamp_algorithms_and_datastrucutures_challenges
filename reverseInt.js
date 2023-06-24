@@ -9,23 +9,22 @@
 //   reverseInt(-90) === -9
 
 
-//! Min lösning
-// function reverseInt(n) {
-//     let reversed= n.toString().split('').reverse()
+//! My solution
+function reverseInt(n) {
+    let reversed= n.toString().split('').reverse()
 
-//     if (Math.sign(n) === -1) {
-//         reversed.unshift('-')
-//         reversed.pop()
-//     }
+    if (Math.sign(n) === -1) {
+        reversed.unshift('-')
+        reversed.pop()
+    }
 
-//     let fromArrayToString = reversed.join('')
-//     let fromStringToNumber = Number(fromArrayToString)
-//     console.log(fromStringToNumber)
+    let number = Number(reversed.join(''))
+   
+    console.log(number)
+    return number
+}
 
-//     return fromStringToNumber
-// }
-
-//! Udemys lösning
+//! Udemys solution
 function reverseInt(n) {
     const reversed =n.toString().split('').reverse().join('')
 
@@ -36,10 +35,4 @@ function reverseInt(n) {
 
 reverseInt(-90)
 
-//! Udemys lösning
-
-// function reverseInt(n){
-
-
-// }
 

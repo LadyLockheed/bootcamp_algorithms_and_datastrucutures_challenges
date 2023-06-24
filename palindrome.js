@@ -7,6 +7,7 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
+//! My solution
 function palindrome(str) {
 const reversedString= str.split('').reverse().join('')
 
@@ -16,15 +17,15 @@ const reversedString= str.split('').reverse().join('')
 
 }
 
-//! Hur det löstes i kursen
+//! How Udemy solved it
 // function palindrome(str) {
 //     const reversedString= str.split('').reverse().join('')
 //         return reversedString === str
     
 // }
 
-//! Alternativa lösningar
-//* Denna gör en onödig koll av alla bokstäver igen. Inte den bästa lösningen
+//! Alternative solutions
+//* This one makes unnecessary checks of all letters. Not the best solution
 // function palindrome(str) {
 //     return str.split('').every((char, i)=>{
 //          return char === str[str.length - i -1]

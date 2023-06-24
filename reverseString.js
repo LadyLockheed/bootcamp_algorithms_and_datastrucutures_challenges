@@ -6,7 +6,7 @@
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG'
 
-//! Hur Udemy löste det
+//! Udemys solution
 let string= 'apple'
 function reverse(str) {
     let reversed = str.split('').reverse().join('')
@@ -14,7 +14,7 @@ function reverse(str) {
 
 }
 
-//! Alternativ lösning med for loop original
+//! Alternative solution with for loop original
 // function reverse(str) {
 //  let reversedString=''
    
@@ -24,7 +24,7 @@ function reverse(str) {
 //     }
 // }
 
-//! Alternativ lösning med for loop annan variant
+//! Alternativ solution with another kind of for loop
 // function reverse(str) {
 //     let reversed='';
 
@@ -37,7 +37,7 @@ function reverse(str) {
 
 // }
 
-//! Alternativ lösning med reverse
+//! Alternative solution with reverse
 // function reverse(str){
 //     let arr=str.split('').reduce((reversed, character)=>{
 //         return character+reversed
@@ -50,7 +50,7 @@ function reverse(str) {
 
 reverse('apple')
 
-//! Lek med reducer
+//! Trying out reducer for fun
 function testReducer(str){
 
     let arr=str.split('').reduce((sum, single)=>{
